@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>formulario</title>
+  </head>
+  <body>
+    <main>
+      <div class="page">
+        <form id="my-form">
+          <fieldset>
+            <legend>Qual seu <span>feedback</span></legend>
+            <div class="col-user">
+              <div class="input-wrapper">
+                <label for="name"></label>
+                <input
+                  required
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nome"
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="email"></label>
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail"
+                />
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="subject"></label>
+              <input
+                required
+                id="subject"
+                placeholder="Assunto"
+                maxlength="50"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="message"></label>
+              <textarea
+                maxlength="150"
+                required
+                id="message"
+                placeholder="Digite sua mensagem"
+              ></textarea>
+            </div>
+            <button type="submit" form="my-form">Enviar mensagem</button>
+          </fieldset>
+        </form>
+
+        <aside>
+          <h2>Onde nos encontrar?</h2>
+
+          <ul>
+            <li>
+              <img src="images/location-pin-svgrepo-com.svg" alt="" />
+              <p>
+                <strong>Endereço: </strong>Rua das Flores, 123, Bairro
+                Primavera, Cidade Fictícia, Estado Imaginário, CEP: 12345-678
+              </p>
+            </li>
+            <li>
+              <img src="images/telephone-svgrepo-com.svg" />
+              <p><strong>Telefone: </strong>(00) 1234-5678.</p>
+            </li>
+            <li>
+              <img src="images/paper-plane-svgrepo-com.svg" />
+              <p>
+                <strong>E-mail: </strong>
+                <a href="mailto:contato@empresaimaginaria.com"
+                  >contato@empresaimaginaria.com</a
+                >
+              </p>
+            </li>
+            <li>
+              <img src="images/world-svgrepo-com.svg" />
+              <p>
+                <strong>Site: </strong
+                ><a href="http://www.empresaimaginaria.com"
+                  >www.empresaimaginaria.com</a
+                >
+              </p>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
